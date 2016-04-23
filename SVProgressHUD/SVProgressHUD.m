@@ -194,10 +194,10 @@ static const CGFloat SVProgressHUDDefaultAnimationDuration = 0.15;
     [self showWithStatus:nil];
 }
 
-+ (void)showForView:fromView:(UIView *)aView {
++ (void)showForView:(UIView *)aView {
     SVProgressHUD *progressView = [self sharedView];
     [aView addSubview:progressView];
-    [progressView showProgress:SVProgressHUDUndefinedProgress];
+    [self showProgress:SVProgressHUDUndefinedProgress];
 }
 
 + (void)showWithMaskType:(SVProgressHUDMaskType)maskType {

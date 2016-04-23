@@ -93,7 +93,7 @@ typedef NS_ENUM(NSUInteger, SVProgressHUDAnimationType) {
 #pragma mark - Show Methods
 
 + (void)show;
-+ (void)showForView:fromView:(UIView *)aView;
++ (void)showForView:(UIView *)aView;
 + (void)showWithMaskType:(SVProgressHUDMaskType)maskType __attribute__((deprecated("Use show and setDefaultMaskType: instead.")));
 + (void)showWithStatus:(NSString*)status;
 + (void)showWithStatus:(NSString*)status maskType:(SVProgressHUDMaskType)maskType __attribute__((deprecated("Use showWithStatus: and setDefaultMaskType: instead.")));
